@@ -1,3 +1,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hamburger-btn {  
+  width: 22px;
+  height: 3px;
+
+  border-radius: 1em;
+  background: black;
+
+  position: relative;
+
+  transition: all  200ms ease-in-out;
+}
+.hamburger-btn::before,
+.hamburger-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  width: 75%;
+  height: 3px;
+
+  border-radius: 1em;
+  background: black;
+
+  transition: all  200ms ease-in-out;
+}
+.hamburger-btn::before {
+  top: -6px;
+}
+.hamburger-btn::after {
+  top: 6px;
+}
+
+button:hover .hamburger-btn,
+button:focus .hamburger-btn,
+button:focus-within .hamburger-btn {
+  background: linear-gradient(90deg, #00B574 50%, #F673A0 50%);
+}
+button:hover .hamburger-btn::before,
+button:focus .hamburger-btn::before,
+button:focus-within .hamburger-btn::before {
+  background: #00B574;
+}
+button:hover .hamburger-btn::after,
+button:focus .hamburger-btn::after,
+button:focus-within .hamburger-btn::after {
+  background: #F673A0;
+}
