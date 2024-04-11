@@ -37,17 +37,14 @@
 }
 
 button:hover .hamburger-btn,
-button:focus .hamburger-btn,
-button:focus-within .hamburger-btn {
+button:active .hamburger-btn {
   background: linear-gradient(90deg, #00B574 50%, #F673A0 50%);
 }
 button:hover .hamburger-btn::before,
-button:focus .hamburger-btn::before,
-button:focus-within .hamburger-btn::before {
+button:active .hamburger-btn::before {
   background: #00B574;
 }
 button:hover .hamburger-btn::after,
-button:focus .hamburger-btn::after,
-button:focus-within .hamburger-btn::after {
+button:active .hamburger-btn::after {
   background: #F673A0;
 }
