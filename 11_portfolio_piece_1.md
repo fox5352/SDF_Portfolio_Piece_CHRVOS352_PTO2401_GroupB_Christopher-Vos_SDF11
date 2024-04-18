@@ -54,8 +54,8 @@ Presentation Slides Template: https://docs.google.com/presentation/d/1MTiIdjlDYy
 
 - since the links uses icons i used aria-label to indicate where the links goes to
 
-- Detail the implementation of the contact form using HTML5 form elements and JavaScript for form validation.
-- I have no idea what forms this is talking about because it is'nt shown
+<!-- - Detail the implementation of the contact form using HTML5 form elements and JavaScript for form validation.
+- I have no idea what forms this is talking about because it is'nt shown -->
 
 - I used a flex layout and center the items inside it.
 
